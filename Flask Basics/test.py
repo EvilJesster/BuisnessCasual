@@ -19,7 +19,7 @@ def whyTho():
 def nice():
     jobsDictionary = loader.inputCSV("data/occupations.csv")
     randomJob = loader.randomValue(jobsDictionary)
-    return render_template('jobs.html', randomJob = randomJob)
+    return render_template('jobs.html', randomJob = randomJob[0], dictionary = jobsDictionary)
 
 @app.route("/thisissosad")
 def bruh():
