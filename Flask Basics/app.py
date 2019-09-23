@@ -1,6 +1,6 @@
 # Pratham Rawat & Jesse Hall
 # SoftDev1 pd1
-# K<n> -- Jinja Tuning
+# K10 -- Jinja Tuning
 # 2019-09-18   
 
 from flask import Flask, render_template
