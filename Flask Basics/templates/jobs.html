@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jobs</title>
+		<title>Mykolyk Regime Job Site</title>
 	</head>
 	<body bgcolor="DarkSeaGreen">
-        <h3>
-            Pratham Rawat and Jesse Hall <br>
-            SoftDev1 pd1 <br>
-            K10 -- Jinja 2019-09-18 <br>git 
-        </h3>
-        <h1> Your random job is: <i style="color:blue">{{ randomJob }}</i></h1>
-        <table border="1">
-            <tr>
-                <th>Job</th>
-                <th>Percentage</th>
-                <th>Link</th>
-            </tr>
-            {% for key in dictionary %}
-            <tr>
-                <td>{{key}}</td>
-                <td>{{dictionary[key]}}</td>
-                <td><a href="http://www.google.com/search?q={{key}}" target="_blank">More Information</a></td>
-            </tr>
-            {% endfor %}
-        </table>
+		<center>
+			<h2>Welcome to the Mykolyk Regime Occupational Division</h2>
+			<h4>
+				<i>
+					The Mykolyk Regime has mandated that all people be randomly assigned an occupation based off of the calculated need for those positions in the economy. <br>
+					After recieving your profession, please choose the link on the table below for more information on your new, lifelong career. <br>
+				</i>
+			</h4>
+			<br>
+	        <h3>
+	            Pratham Rawat and Jesse Hall <br>
+	            SoftDev1 pd1 <br>
+	            K10 -- Jinja 2019-24-2019 <br>
+	        </h3>
+	        <h1> Your random profession is: <i style="color:blue">{{ randomJob }}</i></h1>
+	        <table border="10">
+	            <tr>
+	                <th>Job</th>
+	                <th>Percentage</th>
+	                <th>Link</th>
+	            </tr>
+	            {% for key in dictionary %}
+	            <tr>
+	                <td>{{key}}</td>
+	                <td>{{dictionary[key]}}</td>
+	                <td><a href="http://www.google.com/search?q={{key}}" target="_blank">More Information</a></td>
+	            </tr>
+	            {% endfor %}
+	        </table>
+		</center>
 	</body>
 </html>
